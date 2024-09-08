@@ -3,36 +3,9 @@
 *@
 @model FutureValueModel
 @{
-    Layout = null;
+    ViewBag.Title = "Future Value Calculator";
 }
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width"/>
-        <title>Home Page</title>
-        <style>
-            /*All OF THE CSS STYLES FROM FIGURE 2-14 GO HERE */
-            body {
-                padding: 1em;
-                font-family: Arial, Arial, Helvetica, sans-serif;
-            }
-
-            h1 {
-                margin-top: 0;
-                color: navy;
-            }
-
-            label {
-                display: inline-block;
-                width: 10em;
-                padding-right: 1em;
-            }
-
-            div {
-                margin-bottom: .5em;
-            }
-        </style>
-    </head>
-    <body>
+<h1>Future Value Calculator</h1>
         <form asp-action="Index" method="post">
             <div>
                 <label asp-for="MonthlyInvestment">Monthly Investment:</label>
@@ -53,8 +26,3 @@
             <button type="submit">Calculate</button>
             <a asp-action="Index">Clear</a>
         </form>
-@*         <h1>Future Value Calculator</h1>
-           <p>Customer Name: @ViewBag.Name</p>
-           <p>Future Value: @ViewBag.FV.ToString("C2")</p> *@
-    </body>
-</html>

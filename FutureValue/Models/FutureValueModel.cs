@@ -14,7 +14,7 @@ namespace FutureValue.Models
             decimal futureValue = 0;
             for (int i = 0; i < months; i++)
             {
-                futureValue = (futureValue + monthlyInterestRate) * (1 + monthlyInterestRate);
+                futureValue = (futureValue + MonthlyInvestment) * (1 + monthlyInterestRate);
             }
             return futureValue;
         }
